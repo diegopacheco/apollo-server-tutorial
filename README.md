@@ -17,3 +17,18 @@ npm start
 ```
 
 The server should now accept requests at http://localhost:8080/graphql
+
+Use the query (run more than 1 time)
+```josn
+{
+  author {
+    firstName
+    lastName
+    posts {
+      tags
+      views
+    }
+  }
+}
+
+```
