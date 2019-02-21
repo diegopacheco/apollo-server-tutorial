@@ -42,4 +42,16 @@ Metadata Query / Schema
   } 
 }
 ```
+Fragment sample
+```json
+fragment AuthorFragment on Author {
+    firstName
+    lastName
+} 
 
+{
+    author(firstName:"Will"){
+        ...AuthorFragment
+    }
+}
+```
