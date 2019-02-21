@@ -1,4 +1,4 @@
-import { Author, Post, View, FortuneCookie } from './connectors';
+import { Author, Post, View /*, FortuneCookie*/ } from './connectors';
 
 const resolveFunctions = {
   RootQuery: {
@@ -11,10 +11,10 @@ const resolveFunctions = {
         where = { lastName };
       }
       return Author.find({ where });
-    },
+    }/*,
     fortuneCookie(){
       return FortuneCookie.getOne();
-    },
+    }*/,
   },
   RootMutation: {
     createAuthor: (root, args) => { return Author.create(args); },

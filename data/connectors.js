@@ -70,6 +70,7 @@ db.sync({ force: true }).then(()=> {
 const Author = db.models.author;
 const Post = db.models.post;
 
+/*
 const FortuneCookie = {
   getOne(){
     return rp('http://fortunecookieapi.com/v1/cookie')
@@ -79,5 +80,6 @@ const FortuneCookie = {
       });
   },
 };
+*/
 
-export { Author, Post, View, FortuneCookie };
+export { Author, Post, View /*FortuneCookie*/ };
