@@ -31,3 +31,15 @@ Use the query (run more than 1 time)
  }
 }
 ```
+Metadata Query / Schema
+```json
+{
+  __type(name:"Author"){
+    fields{
+      name,
+      description
+    }
+  } 
+}
+```
+
