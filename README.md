@@ -55,3 +55,24 @@ fragment AuthorFragment on Author {
     }
 }
 ```
+Mutations
+```json
+mutation {
+  createAuthor(
+    firstName: "Diego",
+    lastName:  "Pacheco",
+  ) {
+    id
+  }
+}
+```
+query on last mutation
+```json
+query{
+  author(firstName:"Diego"){
+    id,
+    firstName,
+    lastName
+  }
+}
+```
